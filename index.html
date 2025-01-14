@@ -9,7 +9,11 @@
 <body>
     <header>
         <div class="menu">
-            <div class="logo"><img src="/img/ecar.png" alt="logotype"></div>
+            <div class="logo">
+                <svg>
+                    <use href="./img/sprite.svg#ecar"></use>
+                </svg>
+            </div>
             <ul class="menu-list">
                 <li class="menu-item"><a href="" class="menu-link">Направления</a></li>
                 <li class="menu-item"><a href="" class="menu-link">Услуги</a></li>
@@ -26,9 +30,114 @@
     </header>
     <div class="hero">
         <div class="hero-wrap">
-            <h1>Частные междугородние перевозки</h1>
-            <p>МОЛДОВА-УКРАИНА-ЕВРОПА</p>
-            <p>Получить консультацию и оформить заявку можно связавшись с нами в <a href="">Viber</a>, <a href="">WhatsApp</a> или <a href="">Telegram</a>. </p>
+            <h1 class="hero-head">Частные междугородние перевозки</h1>
+            <p class="hero-route">УКРАИНА-МОЛДОВА-ЕВРОПА</p>
+            <p>Получить консультацию и оформить заявку можно связавшись с нами в <a class="hero-social" href="#">Viber</a>, <a class="hero-social" href="#">WhatsApp</a> или <a class="hero-social" href="#">Telegram</a>.</p>
+            <div class="hero-cont-btn">
+                <a href="#" class="hero-btn">Оформить заявку</a>
+            </div>
+        </div>
+    </div>
+    <div class="aboutus">
+        <div class="aboutus-wrap">
+            <div class="about-wrap-text">
+                <p class="about-text">
+                    Мы быстро и безопасно доставим вас к месту назначения. Можете быть уверены, наша команда состоит из опытных водителей, которые доставят Вас точно и в срок. А также предложит Вам различные способы заказа такси, включая предварительное бронирование и срочный вызов. Мы ценим комфорт и время наших клиентов, и по этому можем предложить поездку на автомобилях разных классов(стандарт, универсал, бус, минивэн).   
+                </p>
+            </div>
+            <div class="aboutus-img"><img src="./img/about.jpg" alt=""></div>
+        </div>
+    </div>
+    <div class="route">
+        <div class="route-wrap">
+            <h3>Направления</h3>
+            <ul class="route-list">
+                <li class="route-item">
+                    <svg>
+                        <use href="./img/sprite.svg#car"></use>
+                    </svg>
+                    <i>Одесса - Кишенёв</i>
+                </li>
+                <li class="route-item">
+                    <svg>
+                        <use href="./img/sprite.svg#car"></use>
+                    </svg>
+                    <i>Одесса - Бухарест</i>
+                </li>
+                <li class="route-item">
+                    <svg>
+                        <use href="./img/sprite.svg#car"></use>
+                    </svg>
+                    <i>Одесса - Днепропетровск</i>
+                </li>
+                <li class="route-item">
+                    <svg>
+                        <use href="./img/sprite.svg#car"></use>
+                    </svg>
+                    <i>Одесса - Львов</i>
+                </li>
+                <li class="route-item">
+                    <svg>
+                        <use href="./img/sprite.svg#car"></use>
+                    </svg>
+                    <i>Одесса - Черновцы</i>
+                </li>
+                <li class="route-item">
+                    <svg>
+                        <use href="./img/sprite.svg#car"></use>
+                    </svg>
+                    <i>Одесса - Ивано-франковск</i>
+                </li>
+                <li class="route-item">
+                    <svg>
+                        <use href="./img/sprite.svg#car"></use>
+                    </svg>
+                    <i>Одесса - Краков</i>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="serv">
+        <div class="serv-wrap">
+            <h3>услуги</h3>
+            <ul class="serv-list">
+                <li class="serv-item">
+                    <h4 class="serv-head">Трансферы в аэропорты и вокзалы</h4>
+                    <p class="sev-descr">Планируете деловую поездку или отпуск? Наши водители доставят вас в аэропорт или на вокзал вовремя и с максимальным комфортом. Услуга включает встречу с табличкой и помощь с багажом.</p>
+                </li>
+                <li class="serv-item">
+                    <h4 class="serv-head">Междугородний трансфер</h4>
+                    <p class="sev-descr">Путешествуйте с комфортом между городами и странами европейского континента. Мы организуем комфортный трансфер в любую точку Европы.</p>
+                </li>
+                <li class="serv-item">
+                    <h4 class="serv-head">Корпоративный трансфер</h4>
+                    <p class="sev-descr">Мы предоставляем услуги премиум-такси для корпоративных клиентов. Будь то встреча важных гостей или транспорт для сотрудников вашей компании</p>
+                </li>
+                <li class="serv-item">
+                    <h4 class="serv-head">Туристический трансфер</h4>
+                    <p class="sev-descr">Ваше путешествие будет лишено проблем с билетами, пересадками, отменами рейсов, так как наше такси вовремя и с комфортом доставит вас в любой отель Европы.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="form">
+        <div class="form-wrap">
+			<div class="foot-inner">
+				<p class="inner-head">подберем лучший вариант<br> под ваши запросы</p>
+				<p class="inner-text">Заполните форму и мы свяжемся с Вами в ближайшее время</p>
+				<form class="tgs">
+					<div class="inner-content">
+						<input class="inner-input" type="name" name="nameinput" id="nameinput"
+						placeholder="Имя">
+						<label class="inner-label" for="nameinput">Ваше имя</label>
+					</div>
+					<div class="inner-content">
+						<input class="inner-input" type="tel" name="tel" id="tel-input" placeholder="+38000000" min-lenght="5" maxlength="12" required>
+						<label class="inner-label" for="tel-input">Ваш телефон</label>
+					</div>
+					<input type="submit" class="inner-btn" value="Расчитать стоимость">
+				</form>
+			</div>
         </div>
     </div>
     <script type="module" src="/scripts/index.js"></script>
