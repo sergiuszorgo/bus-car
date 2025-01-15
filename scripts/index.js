@@ -1,5 +1,5 @@
 const animItems = document.querySelectorAll('.anim-items');
-const burger = document.getElementById('.burger');
+const burger = document.getElementById('burger');
 const body = document.getElementById('body');
 
 
@@ -39,23 +39,17 @@ if (animItems.length > 0) {
     }, 300)
 }
 
-// document.querySelector('#burger').addEventListener('change', function(e) {
-//         document.body.style.overflow = e.target.checked === true ? 'hidden' : '';
-//     });
+document.querySelector('#burger').addEventListener('change', function(e) {
+        document.body.style.overflow = e.target.checked === true ? 'hidden' : '';
+    });
+   
+function openMenu() {
+    body.classList.add('no-scroll');
+}
     
-    burger.addEventListener('click', openMenu);
+function closeMenu() {
+    body.classList.remove('no-scroll');
+    document.body.style.overflow = '';
+    burger.checked = 0;
+}
     
-    // function brgrSwitch() {
-    //     burger.checked = false;
-    //     document.body.style.overflow = '';
-    // }
-    
-    function openMenu(e) {
-        e.preventDefault();
-        body.classList.add('no-scroll');
-    }
-    
-    function closeMenu() {
-        body.classList.remove('no-scroll');
-        burger.classList.toggle('checked');
-    }
