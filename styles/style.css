@@ -416,7 +416,7 @@ header {
 
 .serv-wrap h3 {
     text-transform: uppercase;
-    color: var(--main-textcolor);
+    color: var(--main-bgcolor);
     font-size: 2em;
     text-align: center;
     margin-bottom: 40px;
@@ -570,11 +570,18 @@ header {
     margin-top: 60px;
     display: flex;
     gap: 30px;
+    overflow: hidden;
+}
+
+.contacts-soc {
+    transform: translateY(40%);
+    transition: all 0.6s ease 0.2s;
+    opacity: 0;
 }
 
 .icon {
-    width: 32px;
-    height: 32px;
+    width: 50px;
+    height: 50px;
     transition: var(--transit);
 }
 
@@ -594,7 +601,25 @@ header {
     fill: #2bb741;
 }
 
+/* //CONTANCTS  */
 
+.contacts.active .contacts-soc:nth-child(1) {
+    transition: all 0.6s ease 0.2s;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.contacts.active .contacts-soc:nth-child(2) {
+    transition: all 0.6s ease 0.4s;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.contacts.active .contacts-soc:nth-child(3) {
+    transition: all 0.6s ease 0.6s;
+    transform: translateY(0);
+    opacity: 1;
+}
 
 @media (min-width: 768px) {
     .menu-list {
@@ -616,8 +641,4 @@ header {
     .serv-item {
         width: calc((100% - 20px) / 2);
     }
-    /* .route-list {
-
-    } */
-
 }
