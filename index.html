@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="/styles/style.css">
     <title>Document</title>
 </head>
-<body>
+<body id="body">
     <header>
         <div class="menu">
             <div class="logo">
@@ -15,43 +15,43 @@
                 </svg>
             </div>
             <ul class="menu-list">
-                <li class="menu-item"><a href="" class="menu-link">Направления</a></li>
-                <li class="menu-item"><a href="" class="menu-link">Услуги</a></li>
-                <li class="menu-item"><a href="" class="menu-link">Контакты</a></li>
+                <li class="menu-item"><a href="#nav" class="menu-link">Направления</a></li>
+                <li class="menu-item"><a href="#serv" class="menu-link">Услуги</a></li>
+                <li class="menu-item"><a href="#form" class="menu-link">Контакты</a></li>
             </ul>
                 <input id="burger" type="checkbox" class="menucheck">
                 <label for="burger" class="menu-btn"></label>
                 <ul class="burger-list">
-                    <li class="burger-item"><a href="" class="burger-link">Направления</a></li>
-                    <li class="burger-item"><a href="" class="burger-link">Услуги</a></li>
-                    <li class="burger-item"><a href="" class="burger-link">Контакты</a></li>
+                    <li class="burger-item"><a href="#nav" class="burger-link" onclick='closeMenu()'>Направления</a></li>
+                    <li class="burger-item"><a href="#serv" class="burger-link" onclick='closeMenu()'>Услуги</a></li>
+                    <li class="burger-item"><a href="#form" class="burger-link" onclick='closeMenu()'>Контакты</a></li>
                 </ul>
         </div>
     </header>
     <div class="hero">
         <div class="hero-wrap">
-            <h1 class="hero-head">Частные междугородние перевозки</h1>
-            <p class="hero-route">УКРАИНА-МОЛДОВА-ЕВРОПА</p>
-            <p>Получить консультацию и оформить заявку можно связавшись с нами в <a class="hero-social" href="#">Viber</a>, <a class="hero-social" href="#">WhatsApp</a> или <a class="hero-social" href="#">Telegram</a>.</p>
-            <div class="hero-cont-btn">
+            <h1 class="hero-head anim-items anim-stop">Частные междугородние перевозки</h1>
+            <p class="hero-route anim-items anim-stop">УКРАИНА-МОЛДОВА-ЕВРОПА</p>
+            <p class="hero-consult anim-items anim-stop">Получить консультацию и оформить заявку можно связавшись с нами в <a class="hero-social" href="#">Viber</a>, <a class="hero-social" href="#">WhatsApp</a> или <a class="hero-social" href="#">Telegram</a>.</p>
+            <div class="hero-cont-btn anim-items anim-stop">
                 <a href="#" class="hero-btn">Оформить заявку</a>
             </div>
         </div>
     </div>
     <div class="aboutus">
         <div class="aboutus-wrap">
-            <div class="about-wrap-text">
-                <p class="about-text">
+            <div class="about-wrap-text anim-items anim-stop">
+                <p class="about-text anim-show">
                     Мы быстро и безопасно доставим вас к месту назначения. Можете быть уверены, наша команда состоит из опытных водителей, которые доставят Вас точно и в срок. А также предложит Вам различные способы заказа такси, включая предварительное бронирование и срочный вызов. Мы ценим комфорт и время наших клиентов, и по этому можем предложить поездку на автомобилях разных классов(стандарт, универсал, бус, минивэн).   
                 </p>
             </div>
-            <div class="aboutus-img"><img src="./img/about.jpg" alt=""></div>
+            <div class="aboutus-img anim-items anim-stop"><img class="anim-show" src="./img/about.jpg" alt=""></div>
         </div>
     </div>
-    <div class="route">
+    <div class="route"  id="nav">
         <div class="route-wrap">
             <h3>Направления</h3>
-            <ul class="route-list">
+            <ul class="route-list anim-items anim-stop">
                 <li class="route-item">
                     <svg>
                         <use href="./img/sprite.svg#car"></use>
@@ -97,10 +97,10 @@
             </ul>
         </div>
     </div>
-    <div class="serv">
+    <div class="serv" id="serv">
         <div class="serv-wrap">
             <h3>услуги</h3>
-            <ul class="serv-list">
+            <ul class="serv-list anim-items anim-stop">
                 <li class="serv-item">
                     <h4 class="serv-head">Трансферы в аэропорты и вокзалы</h4>
                     <p class="sev-descr">Планируете деловую поездку или отпуск? Наши водители доставят вас в аэропорт или на вокзал вовремя и с максимальным комфортом. Услуга включает встречу с табличкой и помощь с багажом.</p>
@@ -120,7 +120,7 @@
             </ul>
         </div>
     </div>
-    <div class="form">
+    <div class="form" id="form">
         <div class="form-wrap">
 			<div class="foot-inner">
 				<p class="inner-head">подберем лучший вариант<br> под ваши запросы</p>
@@ -137,9 +137,32 @@
 					</div>
 					<input type="submit" class="inner-btn" value="Расчитать стоимость">
 				</form>
+                <ul class="contacts">
+                    <li>
+                        <a href="viber://chat?number=380985521925" class="contact-link">
+                        <svg class="icon viber">
+                            <use href="./img/symbols.svg#icon-viber"></use>
+                        </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://t.me/+380985521925" class="contact-link">
+                        <svg class="icon telegram">
+                            <use href="./img/symbols.svg#icon-telegram"></use>
+                        </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://wa.me/380985521925" class="contact-link">
+                        <svg class="icon whatsapp">
+                            <use href="./img/symbols.svg#icon-whatsapp"></use>
+                        </svg>
+                        </a>
+                    </li>
+                </ul>
 			</div>
         </div>
     </div>
-    <script type="module" src="/scripts/index.js"></script>
+    <script src="/scripts/index.js"></script>
 </body>
 </html>
