@@ -31,7 +31,6 @@
 
 body.no-scroll {
     overflow: hidden;
-    position: fixed;
 }
 
 ul {
@@ -625,6 +624,65 @@ header {
     transform: translateY(0);
     opacity: 1;
 }
+
+/* CONFIRM  */
+
+.confirm {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index: 400;
+}
+
+.confirm_field {
+	position: absolute;
+	width: 300px;
+	padding: 30px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: var(--main-bgcolor);
+	border-radius: 10px;
+	text-align: center;
+	display: flex;
+	gap: 10px;
+	flex-direction: column;
+	align-items: center;
+}
+
+.confirm_msg {
+	cursor: default;
+	color: var(--main-textcolor);
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 1.5em;
+}
+
+.confirm_link {
+	display: inline-block;
+	margin-top: 20px;
+	padding: 12px 22px;
+	background-color: var(--accent-color);
+	color: var(--main-bgcolor);
+	text-transform: uppercase;
+    text-decoration: none;
+	font-weight: 500;
+	letter-spacing: 0.06em;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	transition: var(--transit);
+}
+
+.confirm_link:hover {
+	background-color: var(--main-bgcolor);
+	color: var(--main-textcolor);
+	border-color: var(--accent-color);
+} 
+
 
 @media (min-width: 768px) {
     .menu-list {

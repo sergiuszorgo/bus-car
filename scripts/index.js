@@ -1,6 +1,7 @@
 const animItems = document.querySelectorAll('.anim-items');
 const burger = document.getElementById('burger');
-const body = document.getElementById('body');
+const body = document.querySelector('body');
+const confirm = document.getElementById('confirm');
 const TOKEN = '7590917922:AAFlil6IUzgYCMd4lEzdb79nI8GdWLQpSIk';
 const CHAT_ID = '-1002482309359';
 const URL_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
@@ -85,3 +86,15 @@ function sendForm(e) {
 
 const tgss = document.querySelectorAll('.tgs')
 tgss.forEach(elem => {elem.addEventListener('submit', sendForm)})
+
+//CONFIRM
+
+function confirmSend() {
+    body.classList.add('no-scroll')
+    confirm.style.display = 'block';
+}
+
+function unConfirmSend() {
+    body.classList.remove('no-scroll')
+    confirm.style.display = 'none';
+}
