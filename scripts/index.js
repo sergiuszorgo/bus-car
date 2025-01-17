@@ -1,6 +1,9 @@
 const animItems = document.querySelectorAll('.anim-items');
 const burger = document.getElementById('burger');
 const body = document.getElementById('body');
+const TOKEN = '7590917922:AAFlil6IUzgYCMd4lEzdb79nI8GdWLQpSIk';
+const CHAT_ID = '-1002482309359';
+const URL_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
 
 if (animItems.length > 0) {
@@ -52,4 +55,33 @@ function closeMenu() {
     document.body.style.overflow = '';
     burger.checked = 0;
 }
+
+// TG 
     
+function sendForm(e) {
+    e.preventDefault();
+
+    let message = `<b>Заявка с сайта</b>\n`;
+    message += `<b>Имя отправителя:</b> ${this.nameinput.value}\n`;
+    message += `<b>Номер телефона:</b> ${this.telinput.value}\n`;
+
+    axios.post(URL_API, {
+        chat_id: CHAT_ID,
+        parse_mode: 'html',
+        text: message
+    })
+    .then((res) => {
+        this.nameinput.value = '';
+        this.telinput.value = '';
+        confirmSend();
+    })
+    .catch((err) => {
+        console.log(err);
+    }) 
+    .finally(() => {
+        
+    })
+}
+
+const tgss = document.querySelectorAll('.tgs')
+tgss.forEach(elem => {elem.addEventListener('submit', sendForm)})
