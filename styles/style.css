@@ -385,8 +385,13 @@ header {
     transition: all 0.6s ease 0.6s;
 }
 
+.route-list.active .route-item:nth-child(8) {
+    transition: all 0.6s ease 0.7s;
+}
+
 .route-item i {
     font-style: normal;
+    font-size: 1.4em;
 }
 
 .route-item svg {
@@ -628,6 +633,11 @@ header {
     .menu-btn {
         display: none;
     }
+
+    .route-item i {
+        font-size: 2em;
+    }
+
     .aboutus-wrap {
         flex-direction: row;
         flex-wrap: nowrap;
