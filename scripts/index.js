@@ -99,3 +99,18 @@ function unConfirmSend() {
     confirm.style.display = 'none';
 }
 
+// TRANSLATE
+
+const lang = document.querySelector('.lang_select');
+
+function translateMenu() {
+    lang.classList.toggle('active');
+}
+
+// TRANSLATEMOBILE
+
+const langMob = document.querySelector('.langmob_select');
+
+function translateMenuMob() {
+    langMob.classList.toggle('active');
+}

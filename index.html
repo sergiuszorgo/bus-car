@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,17 +14,58 @@
                     <use href="./img/sprite.svg#ecar"></use>
                 </svg>
             </div>
-            <ul class="menu-list">
-                <li class="menu-item"><a href="#nav" class="menu-link">Направления</a></li>
-                <li class="menu-item"><a href="#serv" class="menu-link">Услуги</a></li>
-                <li class="menu-item"><a href="#form" class="menu-link">Контакты</a></li>
-            </ul>
+            <div class="menu-wrap">
+                <ul class="menu-list">
+                    <li class="menu-item"><a href="#nav" class="menu-link">Направления</a></li>
+                    <li class="menu-item"><a href="#serv" class="menu-link">Услуги</a></li>
+                    <li class="menu-item"><a href="#form" class="menu-link">Контакты</a></li>
+                </ul>
+                <div class="lang_select">
+                    <div class="lang_box">
+                        <a id="lang" href="#" class="lang_item current" onclick="translateMenu()">ru</a>
+                    </div>
+                    <div class="lang_list">
+                        <a href="./uk/index.html" class="lang_item">uk</a>
+                    </div>
+                </div>
+            </div>
                 <input id="burger" type="checkbox" class="menucheck">
                 <label for="burger" class="menu-btn"></label>
                 <ul class="burger-list">
                     <li class="burger-item"><a href="#nav" class="burger-link" onclick='closeMenu()'>Направления</a></li>
                     <li class="burger-item"><a href="#serv" class="burger-link" onclick='closeMenu()'>Услуги</a></li>
                     <li class="burger-item"><a href="#form" class="burger-link" onclick='closeMenu()'>Контакты</a></li>
+                    <div class="langmob_select">
+                        <div class="langmob_box">
+                            <a id="langmob" href="#" class="langmob_item current" onclick="translateMenuMob()">ru</a>
+                        </div>
+                        <div class="langmob_list">
+                            <a href="./uk/index.html" class="langmob_item">uk</a>
+                        </div>
+                    </div>
+                    <ul class="contacts anim-items anim-stop">
+                        <li class="contacts-soc">
+                            <a href="viber://chat?number=380985521925" class="contact-link">
+                            <svg class="icon viber">
+                                <use href="./img/symbols.svg#icon-viber"></use>
+                            </svg>
+                            </a>
+                        </li>
+                        <li class="contacts-soc">
+                            <a href="https://t.me/+380985521925" class="contact-link">
+                            <svg class="icon telegram">
+                                <use href="./img/symbols.svg#icon-telegram"></use>
+                            </svg>
+                            </a>
+                        </li>
+                        <li class="contacts-soc">
+                            <a href="https://wa.me/380985521925" class="contact-link">
+                            <svg class="icon whatsapp">
+                                <use href="./img/symbols.svg#icon-whatsapp"></use>
+                            </svg>
+                            </a>
+                        </li>
+                    </ul>
                 </ul>
         </div>
     </header>
@@ -101,6 +142,9 @@
                     <i>Яссы ⇄ Кишинёв ⇄ Одесса</i>
                 </li>
             </ul>
+            <div class="slide-up anim-items anim-stop">
+                <p class="other-ways">А также другие направление по договорённости.</p>
+            </div>
         </div>
     </div>
     <div class="serv" id="serv">
