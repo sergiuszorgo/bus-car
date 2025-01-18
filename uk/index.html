@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>VIPDRIVER</title>
+</head>
+<body id="body">
+    <header id="header">
+        <div class="menu">
+            <div class="logo">
+                <svg>
+                    <use href="../img/sprite.svg#ecar"></use>
+                </svg>
+            </div>
+            <div class="menu-wrap">
+                <ul class="menu-list">
+                    <li class="menu-item"><a href="#nav" class="menu-link">Напрями</a></li>
+                    <li class="menu-item"><a href="#serv" class="menu-link">Послуги</a></li>
+                    <li class="menu-item"><a href="#form" class="menu-link">Контакти</a></li>
+                </ul>
+                <div class="lang_select">
+                    <div class="lang_box">
+                        <a id="lang" href="#" class="lang_item current" onclick="translateMenu()">uk</a>
+                    </div>
+                    <div class="lang_list">
+                        <a class="lang_item" href="../index.html">ru</a>
+                    </div>
+                </div>
+            </div>
+                <input id="burger" type="checkbox" class="menucheck">
+                <label for="burger" class="menu-btn"></label>
+                <ul class="burger-list">
+                    <li class="burger-item"><a href="#nav" class="burger-link" onclick='closeMenu()'>Напрями</a></li>
+                    <li class="burger-item"><a href="#serv" class="burger-link" onclick='closeMenu()'>Послуги</a></li>
+                    <li class="burger-item"><a href="#form" class="burger-link" onclick='closeMenu()'>Контакти</a></li>
+                    <div class="langmob_select">
+                        <div class="langmob_box">
+                            <a id="langmob" href="#" class="langmob_item current" onclick="translateMenuMob()">uk</a>
+                        </div>
+                        <div class="langmob_list">
+                            <a href="../index.html" class="langmob_item">ru</a>
+                        </div>
+                    </div>
+                    <ul class="contacts anim-items anim-stop">
+                        <li class="contacts-soc">
+                            <a href="viber://chat?number=380985521925" class="contact-link">
+                            <svg class="icon viber">
+                                <use href="../img/symbols.svg#icon-viber"></use>
+                            </svg>
+                            </a>
+                        </li>
+                        <li class="contacts-soc">
+                            <a href="https://t.me/+380985521925" class="contact-link">
+                            <svg class="icon telegram">
+                                <use href="../img/symbols.svg#icon-telegram"></use>
+                            </svg>
+                            </a>
+                        </li>
+                        <li class="contacts-soc">
+                            <a href="https://wa.me/380985521925" class="contact-link">
+                            <svg class="icon whatsapp">
+                                <use href="../img/symbols.svg#icon-whatsapp"></use>
+                            </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </ul>
+        </div>
+    </header>
+    <div class="hero">
+        <div class="hero-wrap">
+            <h1 class="hero-head anim-items anim-stop">Частные междугородние перевозки</h1>
+            <p class="hero-route anim-items anim-stop">УКРАЇНА-МОЛДОВА-ЄВРОПА</p>
+            <p class="hero-consult anim-items anim-stop">Отримати консультацію та оформити заявку можно зв'язавшись з нами в <a class="hero-social" href="viber://chat?number=380985521925">Viber</a>, <a class="hero-social" href="https://wa.me/380985521925">WhatsApp</a> або <a class="hero-social" href="https://t.me/+380985521925">Telegram</a>.</p>
+            <div class="hero-cont-btn anim-items anim-stop">
+                <a href="#form" class="hero-btn">Оформити заявку</a>
+            </div>
+        </div>
+    </div>
+    <div class="aboutus">
+        <div class="aboutus-wrap">
+            <div class="about-wrap-text anim-items anim-stop">
+                <p class="about-text anim-show">           
+                    Ми швидко та безпечно доставимо вас до місця призначення. 
+                    Можете бути впевнені, наша команда складається з досвідчених водіїв, які доставлять Вас точно та вчасно. А також запропонує Вам різні способи замовлення таксі, включаючи попереднє бронювання та терміновий виклик. Ми цінуємо комфорт і час наших клієнтів, і тому можемо запропонувати поїздку на автомобілях різних класів (стандарт, універсал, бус, мінівен).   
+                </p>
+            </div>
+            <div class="aboutus-img anim-items anim-stop"><img class="anim-show" src="../img/about.jpg" alt=""></div>
+        </div>
+    </div>
+    <div class="route"  id="nav">
+        <div class="route-wrap">
+            <h3>Напрями</h3>
+            <ul class="route-list anim-items anim-stop">
+                <li class="route-item">
+                    <svg>
+                        <use href="../img/sprite.svg#car"></use>
+                    </svg>
+                    <i>Білгород-Дністровський ⇄ Кишинів</i>
+                </li>
+                <li class="route-item">
+                    <svg>
+                        <use href="../img/sprite.svg#car"></use>
+                    </svg>
+                    <i>Одеса ⇄ Київ</i>
+                </li>
+                <li class="route-item">
+                    <svg>
+                        <use href="../img/sprite.svg#car"></use>
+                    </svg>
+                    <i>Одеса ⇄ Умань</i>
+                </li>
+                <li class="route-item">
+                    <svg>
+                        <use href="../img/sprite.svg#car"></use>
+                    </svg>
+                    <i>Одеса ⇄ Бухарест</i>
+                </li>
+                <li class="route-item">
+                    <svg>
+                        <use href="../img/sprite.svg#car"></use>
+                    </svg>
+                    <i>Одеса ⇄ Варна</i>
+                </li>
+                <li class="route-item">
+                    <svg>
+                        <use href="../img/sprite.svg#car"></use>
+                    </svg>
+                    <i>Одеса ⇄ Білгород-Дністровський</i>
+                </li>
+                <li class="route-item">
+                    <svg>
+                        <use href="../img/sprite.svg#car"></use>
+                    </svg>
+                    <i>Умань ⇄ Кишинів</i>
+                </li>
+                <li class="route-item">
+                    <svg>
+                        <use href="../img/sprite.svg#car"></use>
+                    </svg>
+                    <i>Яси ⇄ Кишинів ⇄ Одеса</i>
+                </li>
+            </ul>
+            <div class="slide-up anim-items anim-stop">
+                <p class="other-ways">А також інші напрями за домовленістю.</p>
+            </div>
+        </div>
+    </div>
+    <div class="serv" id="serv">
+        <div class="serv-wrap">
+            <h3>послуги</h3>
+            <ul class="serv-list anim-items anim-stop">
+                <li class="serv-item">
+                    <h4 class="serv-head">Трансфери в аеропорти та вокзали</h4>
+                    <p class="sev-descr">Плануєте ділову поїздку чи відпустку? Наші водії доставлять вас до аеропорту чи вокзалу вчасно та з максимальним комфортом. Послуга включає зустріч із табличкою та допомогу з багажем.</p>
+                </li>
+                <li class="serv-item">
+                    <h4 class="serv-head">Міжміський трансфер</h4>
+                    <p class="sev-descr">Мандруйте з комфортом між містами та країнами європейського континенту. Ми організуємо комфортний трансфер до будь-якої точки Європи.</p>
+                </li>
+                <li class="serv-item">
+                    <h4 class="serv-head">Корпоративний трансфер</h4>
+                    <p class="sev-descr">Ми надаємо послуги преміум-таксі для корпоративних клієнтів. Будь то зустріч важливих гостей або транспорт для співробітників вашої компанії.</p>
+                </li>
+                <li class="serv-item">
+                    <h4 class="serv-head">Туристичний трансфер</h4>
+                    <p class="sev-descr">Ваша подорож буде позбавлена ​​проблем з квитками, пересадками, скасуванням рейсів, тому що наше таксі вчасно та з комфортом доставить вас до будь-якого готелю Європи.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="form" id="form">
+        <div class="form-wrap">
+			<div class="foot-inner">
+				<p class="inner-head">підберемо найкращий варіант<br> під ваші запити</p>
+				<p class="inner-text">Заповніть форму і ми зв'яжемося з Вами найближчим часом</p>
+				<form class="tgs">
+					<div class="inner-content">
+						<input class="inner-input" type="name" name="nameinput" id="nameinput"
+						placeholder="Ім'я">
+						<label class="inner-label" for="nameinput">Ваше ім'я</label>
+					</div>
+					<div class="inner-content">
+						<input class="inner-input" type="tel" name="tel" id="telinput" placeholder="+38 000 000 00 00" min-lenght="5" maxlength="13" required>
+						<label class="inner-label" for="telinput">Ваш телефон</label>
+					</div>
+					<input type="submit" class="inner-btn" value="Розрахувати вартість">
+				</form>
+                <ul class="contacts anim-items anim-stop">
+                    <li class="contacts-soc">
+                        <a href="viber://chat?number=380985521925" class="contact-link">
+                        <svg class="icon viber">
+                            <use href="../img/symbols.svg#icon-viber"></use>
+                        </svg>
+                        </a>
+                    </li>
+                    <li class="contacts-soc">
+                        <a href="https://t.me/+380985521925" class="contact-link">
+                        <svg class="icon telegram">
+                            <use href="../img/symbols.svg#icon-telegram"></use>
+                        </svg>
+                        </a>
+                    </li>
+                    <li class="contacts-soc">
+                        <a href="https://wa.me/380985521925" class="contact-link">
+                        <svg class="icon whatsapp">
+                            <use href="../img/symbols.svg#icon-whatsapp"></use>
+                        </svg>
+                        </a>
+                    </li>
+                </ul>
+			</div>
+        </div>
+    </div>
+    <!-- CONFIRM WONDOW -->
+		<div class="confirm" id="confirm">
+			<div class="confirm_field">
+				<p class="confirm_msg">Дякуємо за довіру!
+				</p>
+				<p class="confirm_msg">Найближчим часов з Вами зв'яжуться.</p>
+				<a href="#header" class="confirm_link" onclick="unConfirmSend()">Повернутись на сайт</a>
+			</div>
+		</div>
+    <script src="../scripts/index.js"></script>
+    <script sr="https://unpkg.com/imask"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+</body>
+</html>
