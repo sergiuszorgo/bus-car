@@ -77,7 +77,7 @@ header {
 
 .logo svg {
     fill: var(--accent-color);
-    width: 80px;
+    width: 100px;
 }
 
 .logo img {
