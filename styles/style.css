@@ -518,14 +518,6 @@ header {
     transition: all 0.6s ease 0.5s;
 }
 
-.route-list.active .route-item:nth-child(7) {
-    transition: all 0.6s ease 0.6s;
-}
-
-.route-list.active .route-item:nth-child(8) {
-    transition: all 0.6s ease 0.7s;
-}
-
 .route-item i {
     font-style: normal;
     font-size: 1.4em;
