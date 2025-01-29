@@ -733,6 +733,26 @@ header {
     fill: #2bb741;
 }
 
+.foot-tel {
+    overflow: hidden;
+    display: block;
+}
+
+.foot-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: var(--main-bgcolor);
+    transform: translateY(100%);
+    transition: all 0.6s ease 0.8s;
+    opacity: 0;
+}
+
+.foot-tel.active .foot-link {
+    transition: all 0.6s ease 0.8s;
+    transform: translateY(0);
+    opacity: 1;
+}
+
 /* //CONTANCTS  */
 
 .contacts.active .contacts-soc:nth-child(1) {
