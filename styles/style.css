@@ -314,7 +314,7 @@ header {
     padding: 0 10px;
     margin: 0 auto;
     height: 100%;
-    gap: 60px;
+    gap: 20px;
 }
 
 .first-side {
@@ -347,8 +347,8 @@ header {
 }
 
 .hero-route {
-    letter-spacing: 0.125em;
-    font-size: 1.2em;
+    letter-spacing: 0.12em;
+    font-size: 1.1em;
     transform: translate(0, 120%);
     opacity: 0;
     transition: all 0.6s ease 0.2s;
@@ -384,6 +384,9 @@ header {
 }
 
 .route-head {
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 200;
     transform: translate(0, 220%);
     opacity: 0;
     transition: all 0.6s ease 0.6s;
@@ -484,11 +487,11 @@ header {
 }
 
 .route-list {
-    margin-top: 30px;
+    margin-top: 18px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 5px;
 }
 
 .route-wrap h3 {
@@ -882,6 +885,20 @@ header {
 } 
 
 
+
+@media (max-width: 767px) {
+    .hero-head {
+        text-transform: uppercase;
+        font-size: 1.4em;
+    }
+    .first-side {
+        gap: 10px;
+    }
+    .route-list {
+        gap: 10px;
+    }
+}
+
 @media (min-width: 768px) {
     .menu-wrap {
         display: flex;
@@ -895,8 +912,15 @@ header {
     .hero-head {
         font-size: 2.6em;
     }
+    .hero-route {
+        letter-spacing: 0.125em;
+        font-size: 1.2em;
+    }
     .table-ways {
         margin-top: 40px;
+    }
+    .route-head {
+        font-size: 2em;
     }
     .route-item i {
         font-size: 1.4em;
