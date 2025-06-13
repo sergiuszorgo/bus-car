@@ -3,8 +3,8 @@ const burger = document.getElementById('burger');
 const body = document.querySelector('body');
 const confirm = document.getElementById('confirm');
 const TOKEN = '7590917922:AAFlil6IUzgYCMd4lEzdb79nI8GdWLQpSIk';
-const CHAT_ID = '-1002482309359';
-const URL_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
+// const CHAT_ID = '-1002482309359';
+// const URL_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
 
 if (animItems.length > 0) {
